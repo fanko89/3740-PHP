@@ -1,0 +1,74 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+      
+     /*----nav----*/
+     nav .ham{
+        display: none;
+    }
+
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+
+nav ul.hide{ /*displays nav when in medium */
+    display: block;
+}
+ 
+     
+
+    /*----main----*/
+
+    main #blogGallery .flexed{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    
+    }
+    main #blogGallery .card{
+        display:block;
+        padding: 0;
+        min-height: 300px;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+    /* main #blogGalery {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+    }
+    main .parentGrid .leadGrid, .grid{
+        padding: .5rem 2vw;
+    }
+
+
+    /*----footer----*/
+  #footerWraper{
+
+      
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto;
+   
+        
+     
+     
+        
+    }
+    
+    footer .footParGrid .footGrid{
+   
+        margin: 0;
+        padding: 2rem 2rem 2rem 0;
+       
+    }
+
+    
+} /*end medium */
+

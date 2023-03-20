@@ -1,0 +1,65 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 60rem) {
+    
+
+ /*----header----*/
+    header{
+        display: flex;
+        max-width: 1200px;
+        margin:auto;
+     
+        
+    }
+
+ /*----navigation----*/
+    nav .container{
+        max-width: 1200px;
+        margin:auto;
+     
+    }
+    
+        /*----main goes here----*/
+        main {
+            width: 1200px;
+            margin:auto;
+        }
+        main #blogGallery .flexed{
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+        
+        }
+        main #blogGallery .card{
+            display:block;
+            min-height: 300px;
+            text-decoration: none;
+            background-color:#9f9f9f;
+            font-size: 1.1rem;
+        }
+     
+
+
+
+    /*----footer----*/
+    #footerWraper{
+        max-width: 1200px;
+       margin: 0px;
+    }
+    footer .footParGrid{
+        max-width: 1200px;
+ 
+       margin: auto;
+ }
+    footer .footParGrid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+     
+        
+    }
+    
+
+} /*end large */
+

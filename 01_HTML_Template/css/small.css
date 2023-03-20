@@ -1,0 +1,366 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- header --------------*/
+header{
+    display: flex;
+    
+}
+header .container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header figure.logo{
+    float: left;
+
+    margin:0 2% 0 0;
+
+   
+}
+header figure.logo img{ 
+    width: 100px;
+    height: 100px;
+
+
+   
+}
+header .number{
+    float: right;
+    margin:0 2% 0 0;
+   
+
+
+
+
+}
+
+/*----------- navagation --------------*/
+/* .ham span:nth-child(1) {
+    display: block;
+}
+.ham span:nth-child(2) {
+    display: none;
+}
+ham.open span:nth-child(1) {
+    display: none;
+}
+ham.open span:nth-child(2) {
+    display: block;
+} */
+
+#primaryNav li ul{
+    display:none
+}
+#primaryNav li:hover ul{
+    display: block;
+}
+/* #primaryNav{
+    height: 0;
+    overflow: hidden;
+} */
+#primaryNav.open{
+    height: auto;
+
+}
+#primaryNav li.parent>a::after{
+    content:'\25BC';
+    font-size:.75rem;
+    color: #4d0000;
+    float: right;
+ 
+
+}
+#primaryNav li ul{
+    display:none;
+
+}
+#primaryNav li:hover ul{
+    display:block;
+   
+}
+nav ul .child a {
+    padding: 1rem 2%;
+    text-decoration: none;
+    color:rgba(255,255,255,0.8);
+    border: none;
+}
+nav button {
+    /* margin: .2rem 2%; */
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255); 
+}
+
+nav{
+    background:  #830000; /* Old browsers */
+    background: -moz-linear-gradient(top,   #830000 0%, #4d0000 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #830000 0%,#4d0000 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #830000 0%,#4d0000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#29609b',GradientType=0 ); /* IE6-9 */
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    max-width: 7rem;
+ 
+}
+
+nav ul li a {
+    display: block;
+    /* padding: 1rem 2%; */
+    text-decoration: none;
+    color:rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+}
+
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3); /* a is for the alpha letter*/
+}
+
+nav ul.hide {
+    display:none;
+}
+
+
+
+/*----------- searchbar --------------*/
+nav .search {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 4px 0;
+    font-size: 14px;
+  
+}
+nav .search input[type=text] {
+    font-size: 16px;
+    float: left;
+    width: 70%;
+    height: 25px;
+    background: #f1f1f1;
+  }
+
+  nav .search button{
+    width: 20%;
+
+    background: #868686;
+    color: white;
+    font-size: 14px;
+    height: 25px;
+    border: .2px solid grey;
+    cursor: pointer;
+}
+form button:hover {
+    background: #5b5b5b;
+  }
+
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 60rem) {
+    .clearfix .search{
+      display: none;
+    
+    }
+    header .number {
+        display:none;
+    }
+  }
+
+/* Swiper */
+
+.swiper {
+    margin: auto;
+    width: 100%;
+   
+}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .swiper-slide picture img {
+    display: block;
+    width: 1200px;
+    max-height: 300px;
+    object-fit: cover;
+  }
+    
+  .swiper-slide picture p{
+      margin:0px;
+      margin-bottom: 40px;
+    background-color: #9f9f9f;
+  }
+  .swiper-pagination{
+    margin: 0;
+  }
+
+/*----- main -----*/
+
+main #blogGallery {
+
+    max-width: 75rem;
+    margin:auto;
+    padding-bottom: 3rem;
+    }
+    
+    main #blogGallery .flexed{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin: 0 -1rem;
+    
+    }
+    main #blogGallery .column {
+        padding: 0;
+        
+    }
+   main #blogGallery .card{
+        display:block;
+        padding: 0;
+        min-height: 400px;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+    main #blogGallery .card p{
+        display:block;
+        padding:0 2%;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    
+    main #blogGallery .bottomCard{
+        display:block;
+      margin:0px;
+        padding: 0;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+
+
+
+    main #blogGallery .bottomCard{
+        display:block;
+        padding:0 2%;
+        text-decoration: none;
+      background-color:#2c2c2c;
+      color: white;
+        font-size: 1.1rem;
+    }
+    
+    
+    main #blogGallery .flexed .column{
+        padding: 1rem;
+    }
+     main #blogGallery .flexed img{
+        width:100%;
+        margin: 0;
+        max-height: 300px;
+    }
+    
+
+
+
+/* footer rules */
+
+footer {
+    
+  
+    background:#d73c3c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d73c3c 0%, #830000 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d73c3c 0%,#830000 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d73c3c 0%,#830000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#29609b',GradientType=0 ); /* IE6-9 */
+    
+    
+
+}
+footer .footParGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    
+    
+    padding:0;
+
+ }
+footer .footParGrid .footGrid{
+    
+ padding: 1rem 0;
+}
+
+footer .footParGrid .footGrid p{
+    
+
+ text-align: left;
+}
+
+footer .footParGrid .footGrid h3{
+
+ margin:0;
+ text-align: left;
+
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding: 2rem 0;
+    background:#d73c3c; /* Old browsers */
+    background: -moz-linear-gradient(top,   #830000 0%, #4d0000 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #830000 0%,#4d0000 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #830000 0%,#4d0000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+footer .social .icon {
+    padding:0 4rem;
+    }
+    footer .social .icon a{
+        text-decoration:none;
+        background-color: rgb(75, 0, 0);
+        padding: .5rem;
+        color: white;
+        border-radius:6px;
+        }
+
+       footer .footerEnd {
+        
+            background-color: white;
+            padding: .5rem;
+            text-align: center;
+            }
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
