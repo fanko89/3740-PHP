@@ -8,6 +8,18 @@
 
     nav ul li {
         float: left;
+        list-style: none;
+        text-decoration: none;
+    }
+    nav ul li {
+   
+        float: left;
+   
+    
+    
+    
+    
+     
     }
     nav ul li a {
         border: none;
@@ -20,36 +32,6 @@ nav ul.hide{ /*displays nav when in medium */
 }
  
      
-/*----------- searchbar --------------*/
-nav .search {
-    display: flex;
-    float: right;
-    margin: 0 -1.7rem;
-    padding: 4px 0;
-    font-size: 1.2rem;
-  
-}
-nav .search input[type=text] {
-    font-size: 1.2rem;
-    float: left;
-    width: 70%;
-    height: 30px;
-    background: #f1f1f1;
-  }
-
-  nav .search button{
-    width: 20%;
-    height: 30px;
-
-    background: #868686;
-    color: white;
-    font-size: 1.0rem;
-    border: .2px solid grey;
-    cursor: pointer;
-}
-form button:hover {
-    background: #5b5b5b;
-  }
 
     /*----main----*/
 

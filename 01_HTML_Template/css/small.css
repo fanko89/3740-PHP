@@ -57,7 +57,8 @@ ham.open span:nth-child(2) {
 } */
 
 #primaryNav li ul{
-    display:none
+    display:none;
+
 }
 #primaryNav li:hover ul{
     display: block;
@@ -73,17 +74,25 @@ ham.open span:nth-child(2) {
 #primaryNav li.parent>a::after{
     content:'\25BC';
     font-size:.75rem;
-    color: #4d0000;
+    color: #1d0000;
     float: right;
+    border-top: 1px solid rgba(0,0,0,0.3);
  
 
 }
 #primaryNav li ul{
     display:none;
+  
+    
 
 }
 #primaryNav li:hover ul{
     display:block;
+    display:flex;
+    flex-wrap: wrap;
+
+   
+  
    
 }
 nav ul .child a {
@@ -91,13 +100,15 @@ nav ul .child a {
     text-decoration: none;
     color:rgba(255,255,255,0.8);
     border: none;
+   
 }
 nav button {
     /* margin: .2rem 2%; */
     background-color: transparent;
     border: none;
     font-size: 1.7rem;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
+
 }
 
 nav{
@@ -117,17 +128,29 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+ 
+
+   
+
+    
 }
 nav ul li {
+   
     float: left;
     list-style: none;
-    max-width: 7rem;
+    text-decoration: none;
+    flex-basis: 100%; 
+
+
+
  
 }
 
 nav ul li a {
     display: block;
-    /* padding: 1rem 2%; */
+    padding: 1rem 2%;
     text-decoration: none;
     font-size: 1.2rem;
     color:rgba(255,255,255,0.8);
@@ -146,6 +169,36 @@ nav ul li a:hover{
 nav ul.hide {
     display:none;
 }
+ /*----------- searchbar --------------*/
+ nav .search {
+    display: flex;
+    float: right;
+    margin: 0 -1.7rem;
+    padding: 4px 0;
+    font-size: 1.2rem;
+  
+}
+nav .search input[type=text] {
+    font-size: 1.2rem;
+    float: left;
+    width: 70%;
+    height: 30px;
+    background: #f1f1f1;
+  }
+
+  nav .search button{
+    width: 20%;
+    height: 30px;
+
+    background: #868686;
+    color: white;
+    font-size: 1.0rem;
+    border: .2px solid grey;
+    cursor: pointer;
+}
+form button:hover {
+    background: #5b5b5b;
+  }
 
 
 
@@ -158,6 +211,7 @@ nav ul.hide {
       display: none;
     
     }
+   
     header .number {
         display:none;
     }
