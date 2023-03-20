@@ -14,6 +14,7 @@ header .container{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding:auto;
 }
 header figure.logo{
     float: left;
@@ -32,6 +33,8 @@ header figure.logo img{
 header .number{
     float: right;
     margin:0 2% 0 0;
+    font-size: 1.3rem;
+    margin:0 -.1rem 0 0;
    
 
 
@@ -93,7 +96,7 @@ nav button {
     /* margin: .2rem 2%; */
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: rgb(255, 255, 255); 
 }
 
@@ -126,6 +129,7 @@ nav ul li a {
     display: block;
     /* padding: 1rem 2%; */
     text-decoration: none;
+    font-size: 1.2rem;
     color:rgba(255,255,255,0.8);
     border-top: 1px solid rgba(0,0,0,0.3);
 
@@ -145,36 +149,7 @@ nav ul.hide {
 
 
 
-/*----------- searchbar --------------*/
-nav .search {
-    display: flex;
-    float: right;
-    margin: 0;
-    padding: 4px 0;
-    font-size: 14px;
-  
-}
-nav .search input[type=text] {
-    font-size: 16px;
-    float: left;
-    width: 70%;
-    height: 25px;
-    background: #f1f1f1;
-  }
 
-  nav .search button{
-    width: 20%;
-
-    background: #868686;
-    color: white;
-    font-size: 14px;
-    height: 25px;
-    border: .2px solid grey;
-    cursor: pointer;
-}
-form button:hover {
-    background: #5b5b5b;
-  }
 
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -198,7 +173,7 @@ form button:hover {
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -216,6 +191,7 @@ form button:hover {
   .swiper-slide picture p{
       margin:0px;
       margin-bottom: 40px;
+      padding-bottom: 10px;
     background-color: #9f9f9f;
   }
   .swiper-pagination{
@@ -226,26 +202,31 @@ form button:hover {
 
 main #blogGallery {
 
-    max-width: 75rem;
     margin:auto;
     padding-bottom: 3rem;
+    }
+    main #blogGallery h1{
+        margin:0 0 0 15px;
     }
     
     main #blogGallery .flexed{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+           width: 100%;
         grid-template-rows: auto;
-        margin: 0 -1rem;
+        margin: 0;
     
     }
     main #blogGallery .column {
         padding: 0;
+     
         
     }
    main #blogGallery .card{
         display:block;
         padding: 0;
         min-height: 400px;
+        width:auto;
         text-decoration: none;
         background-color:#9f9f9f;
         font-size: 1.1rem;
@@ -254,11 +235,12 @@ main #blogGallery {
         display:block;
         padding:0 2%;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     
     main #blogGallery .bottomCard{
         display:block;
+        width: auto;
       margin:0px;
         padding: 0;
         text-decoration: none;
@@ -294,7 +276,7 @@ main #blogGallery {
 
 footer {
     
-  
+   
     background:#d73c3c; /* Old browsers */
     background: -moz-linear-gradient(top,  #d73c3c 0%, #830000 99%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #d73c3c 0%,#830000 99%); /* Chrome10-25,Safari5.1-6 */
@@ -305,8 +287,9 @@ footer {
 
 }
 footer .footParGrid{
+    margin: 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows:auto;
     
     
@@ -320,14 +303,27 @@ footer .footParGrid .footGrid{
 
 footer .footParGrid .footGrid p{
     
-
+    font-size: 1.4rem;
  text-align: left;
 }
 
 footer .footParGrid .footGrid h3{
-
+    font-size: 1.6rem;
  margin:0;
  text-align: left;
+
+}
+footer .footParGrid .footGrid button{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    width: 20.2rem;
+
+
+}
+footer .footParGrid .footGrid input{
+    font-size: 1.6rem;
+
 
 }
 
@@ -342,9 +338,10 @@ footer .social {
     background: linear-gradient(to bottom,  #830000 0%,#4d0000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 footer .social .icon {
-    padding:0 4rem;
+    padding:0 1rem;
     }
     footer .social .icon a{
+        display: flex;
         text-decoration:none;
         background-color: rgb(75, 0, 0);
         padding: .5rem;
@@ -357,6 +354,7 @@ footer .social .icon {
             background-color: white;
             padding: .5rem;
             text-align: center;
+            font-size: 1.2rem;
             }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
