@@ -14,7 +14,7 @@ header .container{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding:auto;
+    padding:0;
 }
 header figure.logo{
     float: left;
