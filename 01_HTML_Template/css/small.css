@@ -6,23 +6,24 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- header --------------*/
 header{
-    display: flex;
+    display:flex;
+
     
 }
 header .container{
-    width:100%;
     display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding:0;
+    flex-direction: row 
+ 
 }
 header figure.logo{
-    float: left;
-
+    flex: 1;
+width: 50%;
     margin:0 2% 0 0;
 
    
 }
+
+    
 header figure.logo img{ 
     width: 100px;
     height: 100px;
@@ -31,10 +32,13 @@ header figure.logo img{
    
 }
 header .number{
-    float: right;
+    display: flex;
+    padding-left: 870px;
+ 
+   width: 1200px;
     margin:0 2% 0 0;
     font-size: 1.3rem;
-    margin:0 -.1rem 0 0;
+   
    
 
 
@@ -43,7 +47,7 @@ header .number{
 }
 
 /*----------- navagation --------------*/
-/* .ham span:nth-child(1) {
+ /* .ham span:nth-child(1) {
     display: block;
 }
 .ham span:nth-child(2) {
@@ -54,7 +58,7 @@ ham.open span:nth-child(1) {
 }
 ham.open span:nth-child(2) {
     display: block;
-} */
+}  */
 
 #primaryNav li ul{
     display:none;
@@ -62,13 +66,12 @@ ham.open span:nth-child(2) {
 }
 #primaryNav li:hover ul{
     display: block;
+   
 }
-/* #primaryNav{
-    height: 0;
-    overflow: hidden;
-} */
+
 #primaryNav.open{
     height: auto;
+
 
 }
 #primaryNav li.parent>a::after{
@@ -77,6 +80,7 @@ ham.open span:nth-child(2) {
     color: #1d0000;
     float: right;
     border-top: 1px solid rgba(0,0,0,0.3);
+    
  
 
 }
@@ -95,13 +99,51 @@ ham.open span:nth-child(2) {
   
    
 }
-nav ul .child a {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+ 
+
+   
+
+    
+}
+nav ul li a {
+    display: block;
+    padding: 1rem 2%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+}
+nav ul li.child a {
     padding: 1rem 2%;
     text-decoration: none;
     color:rgba(255,255,255,0.8);
     border: none;
    
 }
+
+nav ul li {
+   
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    flex-basis: 100%; 
+
+
+
+
+ 
+}
+nav ul li .subNav {
+max-width: ;
+}
+
 nav button {
     /* margin: .2rem 2%; */
     background-color: transparent;
@@ -124,39 +166,9 @@ nav{
 
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display:flex;
-    flex-wrap: wrap;
- 
-
-   
-
-    
-}
-nav ul li {
-   
-    float: left;
-    list-style: none;
-    text-decoration: none;
-    flex-basis: 100%; 
 
 
 
- 
-}
-
-nav ul li a {
-    display: block;
-    padding: 1rem 2%;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color:rgba(255,255,255,0.8);
-    border-top: 1px solid rgba(0,0,0,0.3);
-
-}
 
 nav ul li.active a{
     background-color: rgba(0,0,0,0.1);
@@ -229,7 +241,7 @@ form button:hover {
     text-align: center;
     font-size: 1.2rem;
     background: #fff;
-    display: flex;
+   width:100%;
     justify-content: center;
     align-items: center;
   }
@@ -237,7 +249,7 @@ form button:hover {
   
   .swiper-slide picture img {
     display: block;
-    width: 1200px;
+    width: 100%;
     max-height: 300px;
     object-fit: cover;
   }
@@ -256,17 +268,34 @@ form button:hover {
 
 main #blogGallery {
 
-    margin:auto;
-    padding-bottom: 3rem;
-    }
+    margin:0;
+    padding:0; 
+}
+
+main #blogGallery h1 {
+
+    margin:0;
+    padding:0; 
+}
+div.flexed{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    padding: 0;
+    padding:0; 
+   
+    
+}
+
     main #blogGallery h1{
         margin:0 0 0 15px;
     }
     
     main #blogGallery .flexed{
-        display: grid;
+   
         grid-template-columns: repeat(1, 1fr);
-           width: 100%;
+
         grid-template-rows: auto;
         margin: 0;
     
@@ -276,26 +305,26 @@ main #blogGallery {
      
         
     }
+
    main #blogGallery .card{
         display:block;
         padding: 0;
         min-height: 400px;
-        width:auto;
         text-decoration: none;
         background-color:#9f9f9f;
         font-size: 1.1rem;
     }
     main #blogGallery .card p{
         display:block;
-        padding:0 2%;
+        padding:0;
         text-decoration: none;
         font-size: 1.4rem;
     }
     
     main #blogGallery .bottomCard{
         display:block;
-        width: auto;
-      margin:0px;
+     
+      margin: 0;
         padding: 0;
         text-decoration: none;
         background-color:#9f9f9f;

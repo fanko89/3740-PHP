@@ -12,14 +12,10 @@ autoplay: {
 },
 })
 
+
 function toggleMenu() {
-    console.log(document.getElementById('primaryNav').classList.toggle('hide'))
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+    document.getElementById("primaryNav").classList.toggle("open");
 }
-
-
-// function toggleMenu() {
-//     document.getElementById('parent').classList.toggle('open')
-//     document.getElementById("primaryNav").classList.toogle('open')
-// }
-// const x= document.getElementById('parent')
-// x.onclick = toggleMenu
+var x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu; 

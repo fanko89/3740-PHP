@@ -2,6 +2,12 @@
 @media only screen and (min-width: 60rem) {
     
 
+    body {
+
+        margin:auto;
+
+    }
+
  /*----header----*/
     header{
         display: flex;
