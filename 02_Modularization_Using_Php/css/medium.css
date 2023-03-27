@@ -1,0 +1,195 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+      
+
+
+
+    /*  ----------------------- HEADER --------------------------- */
+
+header{
+    display: table;
+    clear: both;
+ }
+ header figure{
+   float:left;
+ }
+header .number{
+ 
+  float: right;
+  margin-top: 5rem;
+ 
+
+}
+
+
+    /*  ----------------------- NAVIGATION --------------------------- */
+nav #hamburgerBtn {display: none;}
+nav {
+	background-color:#830000;
+   display: flex;
+}
+nav ul {
+    /* margin-left: 2%; */
+    display: flex;
+    justify-content: space-between;
+  
+
+
+}
+
+	nav ul .align {
+        /* margin-left: 2%; */
+        display: flex;
+        border-left: 1px solid rgba(0,0,0,0.1);
+      
+
+
+	}
+	nav ul li {
+    border-right: 1px solid rgba(0,0,0,0.1);
+ 
+}
+	nav ul li a { 
+        display: block;
+        min-width: 8rem;
+        
+        border:none; 
+        font-size: 1rem;
+        padding: 1rem 1.7rem;
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+        /*transition*/
+        -webkit-transition: background 0.3s linear; 
+        transition: background 0.3s linear;
+
+
+
+	}
+	nav ul li a:hover {background: darken(#830000,5%);}
+	
+	
+	nav ul li ul { 
+        z-index:99;
+        position: absolute;
+        background-color: lighten(#830000, 10%);
+        left: -999rem;
+        width: 12rem; 
+        display: flex;
+        flex-wrap: wrap;
+      
+
+
+
+
+	}
+ 	nav ul li ul li {
+	    width: 12rem;
+    border-right: none;
+    border-top: solid 1px rgba(0,0,0,0.2);
+    background-color: #830000;
+  
+	}
+
+ 	nav ul li:hover ul { /* this displays the menus as drop downs  */
+	    left: auto;
+    margin-left: 0;
+	}
+	
+	li.active a{
+        background-color: rgba(0,0,0,0.25);
+    padding-bottom: 1.2rem;
+    }
+	
+
+  /*----------- searchbar --------------*/
+  nav .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+  padding-top: 13px;
+
+  
+}
+nav .search form input[type=text] {
+    /* padding: 6px;
+    margin-top: 8px; */
+    font-size: 17px;
+    border: none;
+  }
+
+  nav .search form button{
+    float: right;
+    /* padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px; */
+    padding-left: 7px;
+    padding-right: 0px;
+    background: #ddd;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+nav .search form button:hover {
+    background: #5b5b5b;
+  }
+
+
+
+
+
+  
+
+     
+
+    /*----main----*/
+
+    main #blogGallery .flexed{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    
+    }
+    main #blogGallery .card{
+        display:block;
+        padding: 0;
+        min-height: 300px;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+    /* main #blogGalery {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+    }
+    main .parentGrid .leadGrid, .grid{
+        padding: .5rem 2vw;
+    }
+
+
+    /*----footer----*/
+  #footerWraper{
+
+      
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto;
+   
+        
+     
+     
+        
+    }
+    
+    footer .footParGrid .footGrid{
+   
+        margin: 0;
+        padding: 2rem 2rem 2rem 0;
+       
+    }
+
+    
+} /*end medium */
+

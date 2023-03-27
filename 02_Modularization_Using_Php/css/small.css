@@ -1,0 +1,252 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- header --------------*/
+
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 50rem) {
+    nav .search form{
+      display: none;
+    
+    }
+   
+    header .number {
+        display:none;
+    }
+  }
+
+
+    
+header figure.logo img{ 
+    width: 100px;
+    height: 100px;
+
+
+   
+}
+header .number{
+    font-size: 1.8rem;
+}
+
+
+
+/* Swiper */
+
+.swiper {
+    margin: auto;
+    width: 100%;
+   
+}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #fff;
+   width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .swiper-slide picture img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+    
+  .swiper-slide picture p{
+      margin:0px;
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+    background-color: #9f9f9f;
+  }
+  .swiper-pagination{
+    margin: 0;
+  }
+
+/*----- main -----*/
+
+main #blogGallery {
+
+    margin:0;
+    padding:0; 
+}
+
+main #blogGallery h1 {
+
+    margin:0;
+    padding:0; 
+}
+div.flexed{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    padding: 0;
+    padding:0; 
+   
+    
+}
+
+    main #blogGallery h1{
+        margin:0 0 0 15px;
+        font-size:xx-large;
+    }
+    
+    main #blogGallery .flexed{
+   
+        grid-template-columns: repeat(1, 1fr);
+
+        grid-template-rows: auto;
+        margin: 0;
+    
+    }
+    main #blogGallery .column {
+        padding: 0;
+     
+        
+    }
+
+   main #blogGallery .card{
+        display:block;
+        padding: 0;
+        min-height: 400px;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+    main #blogGallery .card p{
+        display:block;
+        padding:0;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+    
+    main #blogGallery .bottomCard{
+        display:block;
+     
+      margin: 0;
+        padding: 0;
+        text-decoration: none;
+        background-color:#9f9f9f;
+        font-size: 1.1rem;
+    }
+
+
+
+    main #blogGallery .bottomCard{
+        display:block;
+        padding:0 2%;
+        text-decoration: none;
+      background-color:#2c2c2c;
+      color: white;
+        font-size: 1.1rem;
+    }
+    
+    
+    main #blogGallery .flexed .column{
+        padding:1rem;
+    }
+     main #blogGallery .flexed img{
+        width:100%;
+        margin: 0;
+        max-height: 300px;
+    }
+    
+
+
+
+/* footer rules */
+
+footer {
+    
+   
+    background:#d73c3c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d73c3c 0%, #830000 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d73c3c 0%,#830000 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d73c3c 0%,#830000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#29609b',GradientType=0 ); /* IE6-9 */
+    
+    
+
+}
+footer .footParGrid{
+    /* margin: 0 2%; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    
+    
+    padding:0;
+
+ }
+footer .footParGrid .footGrid{
+    
+ padding: 1rem 0;
+}
+
+footer .footParGrid .footGrid p{
+    
+    font-size: 1.4rem;
+ text-align: left;
+}
+
+footer .footParGrid .footGrid h3{
+    font-size: 1.6rem;
+ margin:0;
+ text-align: left;
+
+}
+footer .footParGrid .footGrid button{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    width: 20.2rem;
+
+
+}
+footer .footParGrid .footGrid input{
+    font-size: 1.6rem;
+
+
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding: 2rem 0;
+    background:#d73c3c; /* Old browsers */
+    background: -moz-linear-gradient(top,   #830000 0%, #4d0000 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #830000 0%,#4d0000 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #830000 0%,#4d0000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+footer .social .icon {
+    padding:0 1rem;
+    }
+    footer .social .icon a{
+        display: flex;
+        text-decoration:none;
+        background-color: rgb(75, 0, 0);
+        padding: .5rem;
+        color: white;
+        border-radius:6px;
+        }
+
+       footer .footerEnd {
+        
+            background-color: white;
+            padding: .5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            }
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
