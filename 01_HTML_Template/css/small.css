@@ -5,23 +5,19 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /*----------- header --------------*/
-header{
-    display:flex;
 
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 50rem) {
+    nav .search form{
+      display: none;
     
-}
-header .container{
-    display:flex;
-    flex-direction: row 
- 
-}
-header figure.logo{
-    flex: 1;
-width: 50%;
-    margin:0 2% 0 0;
-
+    }
    
-}
+    header .number {
+        display:none;
+    }
+  }
+
 
     
 header figure.logo img{ 
@@ -32,198 +28,10 @@ header figure.logo img{
    
 }
 header .number{
-    display: flex;
-    padding-left: 870px;
- 
-   width: 1200px;
-    margin:0 2% 0 0;
-    font-size: 1.3rem;
-   
-   
-
-
-
-
-}
-
-/*----------- navagation --------------*/
- /* .ham span:nth-child(1) {
-    display: block;
-}
-.ham span:nth-child(2) {
-    display: none;
-}
-ham.open span:nth-child(1) {
-    display: none;
-}
-ham.open span:nth-child(2) {
-    display: block;
-}  */
-
-#primaryNav li ul{
-    display:none;
-
-}
-#primaryNav li:hover ul{
-    display: block;
-   
-}
-
-#primaryNav.open{
-    height: auto;
-
-
-}
-#primaryNav li.parent>a::after{
-    content:'\25BC';
-    font-size:.75rem;
-    color: #1d0000;
-    float: right;
-    border-top: 1px solid rgba(0,0,0,0.3);
-    
- 
-
-}
-#primaryNav li ul{
-    display:none;
-  
-    
-
-}
-#primaryNav li:hover ul{
-    display:block;
-    display:flex;
-    flex-wrap: wrap;
-
-   
-  
-   
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display:flex;
-    flex-wrap: wrap;
- 
-
-   
-
-    
-}
-nav ul li a {
-    display: block;
-    padding: 1rem 2%;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color:rgba(255,255,255,0.8);
-    border-top: 1px solid rgba(0,0,0,0.3);
-
-}
-nav ul li.child a {
-    padding: 1rem 2%;
-    text-decoration: none;
-    color:rgba(255,255,255,0.8);
-    border: none;
-   
-}
-
-nav ul li {
-   
-    float: left;
-    list-style: none;
-    text-decoration: none;
-    flex-basis: 100%; 
-
-
-
-
- 
-}
-nav button {
-    /* margin: .2rem 2%; */
-    background-color: transparent;
-    border: none;
-    font-size: 1.7rem;
-    color: rgb(255, 255, 255);
-
-}
-
-nav{
-    background:  #830000; /* Old browsers */
-    background: -moz-linear-gradient(top,   #830000 0%, #4d0000 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #830000 0%,#4d0000 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #830000 0%,#4d0000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#29609b',GradientType=0 ); /* IE6-9 */
-    
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    margin: 0;
-
+    font-size: 1.8rem;
 }
 
 
-
-
-
-nav ul li.active a{
-    background-color: rgba(0,0,0,0.1);
-}
-
-nav ul li a:hover{
-    background-color: rgba(0,0,0,0.3); /* a is for the alpha letter*/
-}
-
-nav ul.hide {
-    display:none;
-}
- /*----------- searchbar --------------*/
- nav .search {
-    display: flex;
-    float: right;
-    margin: 0 -1.7rem;
-    padding: 4px 0;
-    font-size: 1.2rem;
-  
-}
-nav .search input[type=text] {
-    font-size: 1.2rem;
-    float: left;
-    width: 70%;
-    height: 30px;
-    background: #f1f1f1;
-  }
-
-  nav .search button{
-    width: 20%;
-    height: 30px;
-
-    background: #868686;
-    color: white;
-    font-size: 1.0rem;
-    border: .2px solid grey;
-    cursor: pointer;
-}
-form button:hover {
-    background: #5b5b5b;
-  }
-
-
-
-
-
-  
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-  @media screen and (max-width: 60rem) {
-    .clearfix .search{
-      display: none;
-    
-    }
-   
-    header .number {
-        display:none;
-    }
-  }
 
 /* Swiper */
 
@@ -286,6 +94,7 @@ div.flexed{
 
     main #blogGallery h1{
         margin:0 0 0 15px;
+        font-size:xx-large;
     }
     
     main #blogGallery .flexed{
@@ -340,7 +149,7 @@ div.flexed{
     
     
     main #blogGallery .flexed .column{
-        padding: 1rem;
+        padding:1rem;
     }
      main #blogGallery .flexed img{
         width:100%;
@@ -366,7 +175,7 @@ footer {
 
 }
 footer .footParGrid{
-    margin: 0 2%;
+    /* margin: 0 2%; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:auto;

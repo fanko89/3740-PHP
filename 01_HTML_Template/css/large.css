@@ -2,32 +2,25 @@
 @media only screen and (min-width: 60rem) {
     
 
-    body {
-
-        margin:auto;
-
-    }
 
  /*----header----*/
-    header{
-        display: flex;
-        max-width: 1200px;
-        margin:auto;
-     
-        
-    }
+ header {
+    max-width: 1200px;
+    margin:auto;
+ 
+}
 
  /*----navigation----*/
-    nav .container{
-        max-width: 1200px;
-        margin:auto;
-     
-    }
+ nav .container{
+    max-width: 1200px;
+    margin:auto;
+}
     
         /*----main goes here----*/
         main {
-            width: 1200px;
+            max-width: 1200px;
             margin:auto;
+        
         }
         main #blogGallery .flexed{
 
@@ -45,11 +38,10 @@
      
 
 
-
     /*----footer----*/
     #footerWraper{
         max-width: 1200px;
-       margin: 0px;
+       margin: auto;
     }
     footer .footParGrid{
         max-width: 1200px;
