@@ -55,7 +55,7 @@ nav ul {
         
         border:none; 
         font-size: 1rem;
-        padding: .9rem 1.2rem;
+        padding: 1rem 1.7rem;
         color: rgba(255,255,255,1);
         text-decoration: none;
         /*transition*/
@@ -107,7 +107,7 @@ nav ul {
     flex-direction: row;
     justify-content: flex-end;
 
-  padding-top: 11px;
+  padding-top: 13px;
 
   
 }
