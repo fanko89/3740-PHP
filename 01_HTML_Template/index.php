@@ -1,5 +1,9 @@
-<?php include 'header.php';  ?>
-    <main> 
+<?php include 'header.php'; ?>
+
+
+<body>
+    <!-- swiper images -->
+    <main>
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -93,5 +97,4 @@
 </div>
     </section>
     </main>
-   <!-- footer -->
-   <?php include 'footer.php';  ?>
+    <?php include 'footer.php'; ?>

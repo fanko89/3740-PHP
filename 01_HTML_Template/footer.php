@@ -1,4 +1,5 @@
-<div id="footerWrapper">
+   <!-- footer -->
+   <div id="footerWrapper">
     <footer>
         <div class="footParGrid">
         <div class ="footGrid">

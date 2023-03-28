@@ -76,8 +76,3 @@
 
 </div>
 </nav>
-    
-
-
-<body>
-    <!-- swiper images -->
